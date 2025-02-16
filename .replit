@@ -1,0 +1,15 @@
+modules = ["python-3.12"]
+run = "run"
+
+[nix]
+channel = "stable-24_05"
+
+[unitTest]
+language = "python3"
+
+[gitHubImport]
+requiredFiles = [".replit", "replit.nix"]
+
+[deployment]
+run = ["sh", "-c", "run"]
+deploymentTarget = "cloudrun"
